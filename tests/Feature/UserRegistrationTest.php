@@ -19,7 +19,7 @@ class UserRegistrationTest extends TestCase
           'lastname'  => $this->faker->lastName,
           'role'      => 'admin',
           'email'     => $this->faker->email,
-          'password'  => $this->faker->password(6,20)
+          'password'  => $this->faker->password(8,20)
         ];
   
         $response = $this->json('post', 'api/register', $payload);
